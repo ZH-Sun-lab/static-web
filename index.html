@@ -1,18 +1,219 @@
-eric test 20260409
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>甘肃省专业技术人员继续教育学时证明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #f5f7fb;
+            font-family: "微软雅黑", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            color: #1f2d3d;
+            line-height: 1.5;
+            padding: 16px;
+        }
 
-12312312
-3
-1
-12
-3123
-1
-23
-1
-231
-23
-12
-31
-2
-31
-23131
+        /* 整体容器 - 手机优先 */
+        .app-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* 简洁头部 */
+        .simple-header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .simple-header h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #0b2b4f;
+            letter-spacing: 1px;
+            border-left: none;
+            padding: 0;
+            background: transparent;
+        }
+        .simple-header .sub {
+            font-size: 0.75rem;
+            color: #6c7a8e;
+            margin-top: 6px;
+            border-top: 1px solid #e2e8f0;
+            display: inline-block;
+            padding-top: 6px;
+        }
+
+        /* 卡片样式 */
+        .cert-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+            width: 100%;
+        }
+
+        .card-header {
+            background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
+            padding: 20px 24px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .card-header h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0b2b4f;
+            letter-spacing: 1px;
+            border-left: 5px solid #1e88e5;
+            padding-left: 16px;
+            margin: 0;
+        }
+
+        /* 信息区域 */
+        .cert-body {
+            padding: 24px 24px 20px;
+        }
+
+        .info-grid {
+            width: 100%;
+        }
+
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #edf2f7;
+            padding: 14px 0;
+        }
+
+        .info-label {
+            width: 110px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #1e2a3a;
+            font-size: 0.9rem;
+            word-break: break-word;
+        }
+
+        /* 底部简洁版权 */
+        .footer-note {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            text-align: center;
+            color: #8a99aa;
+            border-top: 1px solid #eef2f7;
+            padding-top: 16px;
+        }
+
+        /* 手机适配：标签独占一行 */
+        @media (max-width: 640px) {
+            body {
+                padding: 12px;
+            }
+            .info-label {
+                width: 100%;
+                margin-bottom: 6px;
+                font-size: 0.85rem;
+                color: #4a627a;
+            }
+            .info-row {
+                flex-direction: column;
+                padding: 12px 0;
+            }
+            .card-header {
+                padding: 16px 20px;
+            }
+            .card-header h2 {
+                font-size: 1.25rem;
+                padding-left: 12px;
+            }
+            .cert-body {
+                padding: 20px;
+            }
+        }
+
+        /* 轻量水印（不影响内容，仅防伪装饰） */
+        .watermark-sim {
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            font-size: 9px;
+            color: #cbd5e1;
+            background: rgba(255,255,240,0.3);
+            padding: 2px 10px;
+            border-radius: 30px;
+            pointer-events: none;
+            z-index: 999;
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+<body>
+<div class="app-wrapper">
+
+    <!-- 核心卡片 -->
+    <div class="cert-card">
+        <div class="card-header">
+            <h2>证书详情</h2>
+        </div>
+
+        <div class="cert-body">
+            <div class="info-grid">
+                <!-- 按照用户要求展示字段：年度、姓名、身份证号、科目、学时、培训内容、录入时间 -->
+                <div class="info-row">
+                    <div class="info-label">年 度：</div>
+                    <div class="info-value">2025</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">姓 名：</div>
+                    <div class="info-value">黄小玲</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">身份证号：</div>
+                    <div class="info-value">622427199202104503</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">科 目：</div>
+                    <div class="info-value">公需科目</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">学 时：</div>
+                    <div class="info-value">30.00</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">培训内容：</div>
+                    <div class="info-value">公需课(2025)</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">录入时间：</div>
+                    <div class="info-value">2025-12-21 16:32:11</div>
+                </div>
+            </div>
+        </div>
+        <!-- 无任何印章、按钮、证书查询码、数据归属等多余模块 -->
+    </div>
+
+</div>
+
+<!-- 轻量水印（不影响内容） -->
+<div class="watermark-sim">官方验证凭证</div>
+
+<script>
+    (function() {
+        // 本页面为静态数据展示，无需动态参数，但保持控制台输出以供检查
+        console.log("继续教育学时证明 | 姓名：黄小玲 | 年度：2024 | 学时：30.00");
+    })();
+</script>
+</body>
+</html>
